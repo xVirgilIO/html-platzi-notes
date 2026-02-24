@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Práctica final HTML: semántica, formularios, tablas, multimedia y accesibilidad." />
+  <title>Práctica final HTML</title>
+  <style>
+    body{font-family:system-ui,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;line-height:1.45}
+    nav ul{display:flex;gap:1rem;list-style:none;padding:0}
+    table{width:100%;border-collapse:collapse} th,td{border:1px solid #ddd;padding:.5rem}
+    footer{margin-top:2rem;color:#666}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Práctica final: HTML semántico</h1>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#tabla">Tabla</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Contenido principal</h2>
+      <p>Demo que integra estructura semántica, imagen responsiva, multimedia, tabla y formulario accesible.</p>
+      <picture>
+        <source media="(max-width: 700px)" srcset="https://picsum.photos/600/300" />
+        <img src="https://picsum.photos/900/400" alt="Imagen de ejemplo para práctica HTML" width="900" height="400" />
+      </picture>
+    </section>
+
+    <section id="tabla">
+      <h2>Tabla de recursos</h2>
+      <table>
+        <thead>
+          <tr><th>Recurso</th><th>Tipo</th><th>Nivel</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>HTML Reference</td><td>Documentación</td><td>Básico</td></tr>
+          <tr><td>MDN HTML</td><td>Documentación</td><td>Todos</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><th>Total</th><th colspan="2">2 recursos</th></tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>Video embebido</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de ejemplo" allowfullscreen></iframe>
+    </section>
+
+    <section id="contacto">
+      <h2>Formulario</h2>
+      <form>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" required />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <label for="edad">Edad</label>
+        <input id="edad" name="edad" type="number" min="1" max="120" />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <small>Hecho como práctica del Curso de HTML (Platzi).</small>
+  </footer>
+</body>
+</html>
