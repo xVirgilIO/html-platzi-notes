@@ -3,8 +3,9 @@
 Repositorio de estudio público (tipo portfolio) del Curso de HTML en Platzi, pensado para GitHub Pages.
 
 ## Estado del curso
-- Progreso: **6/17** clases completadas.
-- Última clase documentada: **Listas y enlaces**.
+- Progreso: **17/17** clases completadas.
+- Examen final: **aprobado**.
+- Certificado: **generado en Platzi**.
 
 ## Nivel del contenido
 - **No es ultra-básico**: además del resumen de clase, incluye buenas prácticas, detalles de accesibilidad y mini ejercicios para consolidar lo visto.
@@ -16,7 +17,9 @@ Repositorio de estudio público (tipo portfolio) del Curso de HTML en Platzi, pe
 - Está listo para publicarse como sitio estático en GitHub Pages.
 
 ## Contenido
-- `notes/day-01-listas-enlaces.md` — Resumen estructurado con snippets y ejercicios.
+- `notes/day-01-listas-enlaces.md` — Resumen inicial.
+- `notes/curso-html-platzi-informe-final.md` — Informe completo clase por clase.
+- `examples/final-practice.html` — Práctica final con semántica, formularios, tablas y multimedia.
 
 ## Deploy
 - Workflow listo en `.github/workflows/pages.yml`.
